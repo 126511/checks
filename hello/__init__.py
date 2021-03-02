@@ -15,4 +15,4 @@ def compiles():
 def prints_hello():
     """prints "hello, world\\n" """
     # regex=True by default :)
-    check50.run("./main").stdout("Hello world\n").exit()
+    check50.run("./main").stdout("Hello, world!\n").exit()
