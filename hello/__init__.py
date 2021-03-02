@@ -13,6 +13,6 @@ def compiles():
 
 @check50.check(compiles)
 def prints_hello():
-    """prints "hello, world\\n" """
+    """prints "hello, vincent\\n" for input of "vincent" """
     # regex=True by default :)
     check50.run("./main").stdin("vincent").stdout("[Hh]ello, vincent!\n").exit()
