@@ -11,8 +11,8 @@ def compiles():
     """main.c compiles"""
     check50.c.compile("main.c", lcs50=True)
 
-@check50.check(exists)
+@check50.check(compiles)
 def prints_hello():
     """prints "hello, world\\n" """
     # regex=True by default :)
-    check50.run("./main").stdout("[Hh]ello world\n").exit(0)
+    check50.run("./main").stdout("Hello world\n").exit()
