@@ -10,7 +10,7 @@ def exists():
 def integer():
     """variabele geheel getal goed gedeclareerd"""
 
-    text = open("variabelen.txt").read().lower()
+    text = open("variabelen.txt").read()
     if "int aantal_ijsjes = 6;" not in text:
         raise check50.Failure(f"Variabele geheel getal niet goed gedeclareerd.")
 
@@ -18,7 +18,7 @@ def integer():
 def character():
     """variabele karakter goed gedeclareerd"""
 
-    text = open("variabelen.txt").read().lower()
+    text = open("variabelen.txt").read()
     if "char schreeuw = '!';" not in text:
         raise check50.Failure(f"Variabele karakter niet goed gedeclareerd.")
 
@@ -26,9 +26,9 @@ def character():
 def string():
     """variabele stuk tekst goed gedeclareerd"""
 
-    text = open("variabelen.txt").read().lower()
+    text = open("variabelen.txt").read()
     if 'string test = "Dit is een test";' not in text:
-        raise check50.Failure(f"Variabele stuk tekst niet goed gedeclareerd. {text}")
+        raise check50.Failure(f"Variabele stuk tekst niet goed gedeclareerd.")
 
         
         
