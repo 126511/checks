@@ -27,7 +27,7 @@ def string():
     """variabele stuk tekst goed gedeclareerd"""
 
     text = open("variabelen.txt").read().lower()
-    if "string test = \"Dit is een test\";" not in text:
+    if 'string test = \"Dit is een test\";' not in text:
         raise check50.Failure(f"Variabele stuk tekst niet goed gedeclareerd.")
 
         
