@@ -4,7 +4,7 @@ import check50
 @check50.check()
 def exists():
     """variabelen.txt bestaat"""
-    check50.exists("log.sql", "answers.txt")
+    check50.exists("variabelen.txt")
     
 @check50.check(exists)
 def integer():
