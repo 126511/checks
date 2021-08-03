@@ -15,4 +15,4 @@ def compiles():
 def prints_hello():
     """prints "hello, vincent\\n" for input of "vincent" """
     # regex=True by default :)
-    check50.run("./main").stdout("[Gg]egroet, gebruiker[!]\n").exit()
+    check50.run("./main").stdout("[Gg]egroet, gebruiker!\n").exit()
