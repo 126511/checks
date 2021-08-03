@@ -1,5 +1,7 @@
 submit50:
   files: &submit50_files
+    - !exclude *
+    - !include main.c
     - !require main.c
 
 check50:
