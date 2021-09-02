@@ -1,8 +1,8 @@
 check50: 
   files: &check50_files
-    - !exclude "*"
+    - !include "*"
     - !require main.c
-    - !require les2.h
+    - !include les2.h
 
 submit50:
   files: *check50_files
