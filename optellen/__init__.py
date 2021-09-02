@@ -9,6 +9,7 @@ def exists():
 @check50.check(exists)
 def compiles():
     """hello.c compileert"""
+    check50.include("les2.h")
     check50.c.compile("main.c", lcs50=True)
 
 @check50.check(compiles)
