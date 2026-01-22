@@ -1,6 +1,7 @@
 check50: 
   files: &check50_files
     - !exclude "*"
+    - !require opdracht04.c
 
 submit50:
   files: *check50_files
